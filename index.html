@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top:10px;font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (min-width: 376px) {  
+      body {
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+      }
+    }
+    @media screen and (max-width:375px) {
+      body{
+        background-image: url("pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+      }
+      
+    }
+    body{
+      font-family: 'Red Hat Display', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #container {
+      margin-top: 30px;
+      max-width: 340px ;
+      background-color: white;
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #tipa-strana {
+      max-width: 100%;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+    }
+    .light {
+      font-size: 13px;
+      color: hsl(224, 23%, 55%);
+    }
+    h1 {
+      color: hsl(223, 47%, 23%);
+      font-weight: 900;
+      font-size: 150%;
+
+    }
+    #header {
+      margin-top: 25px;
+      max-width: 65%;
+      margin-bottom: 15px;
+     
+    }
+    p {
+      color: hsl(223, 47%, 23%);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    #icon-container-flex-row {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      background-color:hsl(225, 100%, 98%); 
+    }
+    #music-logo{
+      margin: 15px ;
+     
+    }
+    a {
+      
+      padding-top: 25px;
+      padding-left: 55px;
+      font-size: 13px;
+      color: hsl(245, 75%, 52%);
+    }
+    a:hover {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+    }
+    .hover-blue{
+      margin-top: 15px;
+      background-color: hsl(245, 75%, 52%);
+      width: 80%;
+      height: 40px;
+      border-radius: 8px;
+      box-shadow: 10px 10px 10px 5px hsl(225, 100%, 94%);
+    }
+    label{
+      color: hsl(225, 100%, 98%);
+      position: relative;
+      top: 20%;
+      font-size: 13px;
+    }
+    .hover-blue:hover{
+      opacity: 0.65;
+      cursor: pointer;
+    }
+    .hover:hover {
+      color: hsl(223, 47%, 23%);
+      cursor: pointer;
+    }
+    .hover{
+      margin: 25px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+      <img id="tipa-strana"src="illustration-hero.svg">
+      <div id="header">
+        <h1>Order Summary</h1>
+
+        <p class="light">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+      </div>
+      <div id="icon-container-flex-row">
+        <img id="music-logo"src="icon-music.svg">
+    
+        <p >Annual Plan <br>
+        <label class="light"> $59.99/year</label></p>
+
+        <a href="">Change</a>  
+      </div>
+      <div class="hover-blue"><label>Proceed to Payment</label> </div>
+      <p class="light hover">Cancel Order</p>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/mario-santoro89" target="_blank">Mario Santoro</a>.
+  </div>
+</body>
+</html>
